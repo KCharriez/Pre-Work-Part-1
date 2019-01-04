@@ -42,18 +42,11 @@ h1 {
 /* Your CSS code goes here */
 p	{
   color: #777;
+	font-size: .9em;
 }
 
-.pledgeBox {
-
-}
-
-.pledgeButton {
-
-}
-
-.containerBottomButton {
-	font-weight: bold;
+.fontBig {
+	font-size: 1.15em;
 }
 
 .bold {
@@ -64,6 +57,10 @@ p	{
 	font-style: italic;
 }
 
+.colorBlack {
+	color:#000;
+}
+
 .colorOrange {
 	color:#EF5F3C;
 }
@@ -72,6 +69,33 @@ p	{
 	color:#20A1D4;
 }
 
-.colorWhite {
-  color: #FFF;
+.colorLight {
+  color: #eaeaea;
+}
+
+.moneyNeededBox {
+	background-color: #424242;
+	border-radius: 5px;
+}
+
+.pledgeWindow {
+	background-color: inherit;
+	border: 1px  #eaeaea solid;
+}
+
+.underButton {
+	background-color: #eaeaea;
+	border: 1px  #777 solid;
+	border-radius: 5px;
+}
+
+.pledgeBox {
+	background-color: inherit;
+	border: 1px  #eaeaea solid;
+	border-radius: 5px;
+}
+
+.pledgeButton {
+	background-color: #1CBC2C;
+	border-radius: 5px;
 }
