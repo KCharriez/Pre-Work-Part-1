@@ -41,8 +41,19 @@ h1 {
 
 /* Your CSS code goes here */
 p	{
-  font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
   color: #777;
+}
+
+.pledgeBox {
+
+}
+
+.pledgeButton {
+
+}
+
+.containerBottomButton {
+	font-weight: bold;
 }
 
 .bold {
