@@ -40,3 +40,27 @@ h1 {
 */
 
 /* Your CSS code goes here */
+p	{
+  font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+  color: #777;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.italic {
+	font-style: italic;
+}
+
+.colorOrange {
+	color:#EF5F3C;
+}
+
+.colorBlue {
+	color:#20A1D4;
+}
+
+.colorWhite {
+  color: #FFF;
+}
