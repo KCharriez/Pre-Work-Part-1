@@ -40,16 +40,15 @@ h1 {
 */
 
 /* Your CSS code goes here */
+
 p	{
   color: #777;
 	font-size: .85em;
 	padding: 10px;
 }
-
-.container {
-	margin: .5em auto !important;
+div.container {
+	margin: .5em auto;
 }
-
 .gridBox {
 	background-color: transparent;
 	display: grid;
@@ -58,44 +57,34 @@ p	{
 	grid-template-areas: "moneyNeededBox moneyNeededBox"
 											 "pledgeWindow pledgeWindow"
 											 "leftButton rightButton";
-
-	}
-
+}
 .fontBig {
 	font-size: 1.18em;
 }
-
 .bold {
 	font-weight: bold;
 }
-
 .italic {
 	font-style: italic;
 }
-
 .colorBlack {
 	color:#000;
 }
-
 .colorOrange {
 	color:#EF5F3C;
 }
-
 .colorBlue {
 	color:#20A1D4;
 }
-
 .colorLight {
   color: #FFF;
 }
-
-.moneyNeededBox {
-	margin: 0 !important;
+div.moneyNeededBox {
+	margin: 0;
 	background-color: #424242;
 	border-radius: 5px;
 	grid-area: moneyNeededBox;
 }
-
 .pledgeWindow {
 	background-color: transparent;
 	border: 1px  #eaeaea solid;
@@ -108,17 +97,14 @@ p	{
 	grid-template-rows: 4% 2fr 1fr 1fr;
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 }
-
 .pledgeWindow main {
 	grid-area: main;
 	text-align: left;
 }
-
 .pledgeWindow footer {
 	grid-area: footer;
 	text-align: left;
 }
-
 .pledgeBox {
 	grid-area: pledgeBox;
 	background-color: #FFF;
@@ -127,36 +113,30 @@ p	{
 	text-align: left;
 	margin: 0px 10px;
 }
-
 .pledgeButton {
 	grid-area: pledgeButton;
 	background-color: #1CBC2C;
 	border-radius: 5px;
 	margin: 0px 10px;
 }
-
 .pledgeWindow header {
 	grid-area: header;
   background-color: #EF5F3C;
 }
-
 .pledgeWindow headerEmpty {
 	grid-area: headerEmpty;
 	border: 1px  #eaeaea solid;
   background-color: #FFF;
 }
-
 .underButton {
 	background-color: #eaeaea;
 	border: 1px  #777 solid;
 	border-radius: 5px;
-	margin: 0px 10px;
+	margin: 0px;
 }
-
 .rightButton {
 	grid-area: rightButton;
  }
-
  .leftButton {
   grid-area: leftButton;
  }
