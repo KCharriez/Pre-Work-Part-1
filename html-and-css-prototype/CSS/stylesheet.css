@@ -42,21 +42,12 @@ h1 {
 /* Your CSS code goes here */
 p	{
   color: #777;
-	font-size: .9em;
-}
-
-header {
-	grid-area: header;
-  background-color: #EF5F3C;
-}
-
-headerEmpty {
-	grid-area: headerEmpty;
-  background-color: #eaeaea;
+	font-size: .85em;
+	padding: 15px;
 }
 
 .fontBig {
-	font-size: 1.15em;
+	font-size: 1.18em;
 }
 
 .bold {
@@ -80,12 +71,13 @@ headerEmpty {
 }
 
 .colorLight {
-  color: #eaeaea;
+  color: #FFF;
 }
 
 .moneyNeededBox {
 	background-color: #424242;
 	border-radius: 5px;
+	max-width: 250px;
 }
 
 .pledgeWindow {
@@ -93,40 +85,51 @@ headerEmpty {
 	border: 1px  #eaeaea solid;
 	display: grid;
 	max-width: 250px;
-	position: relative;
-	margin: auto;
-	grid-gap: 10px / 10px;
-	grid-template-areas: "header headerEmpty"
+	grid-template-areas: "header header"
 											 "main main"
 	  									 "pledgeBox pledgeButton"
 											 "footer footer";
-	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 6% 2fr 1fr 1fr;
 	grid-template-columns: 1fr 1fr;
 }
 
 .pledgeWindow main {
 	grid-area: main;
+	text-align: left;
 }
 
 .pledgeWindow footer {
 	grid-area: footer;
-}
-
-.underButton {
-	background-color: #eaeaea;
-	border: 1px  #777 solid;
-	border-radius: 5px;
+	text-align: left;
 }
 
 .pledgeBox {
 	grid-area: pledgeBox;
-	background-color: inherit;
+	background-color: #FFF;
 	border: 1px  #eaeaea solid;
 	border-radius: 5px;
+	text-align: left;
 }
 
 .pledgeButton {
 	grid-area: pledgeButton;
 	background-color: #1CBC2C;
+	border-radius: 5px;
+}
+
+.pledgeWindow header {
+	grid-area: header;
+  background-color: #EF5F3C;
+	z-index: 3;
+}
+
+.pledgeWindow headerEmpty {
+	grid-area: headerEmpty;
+  background-color: #eaeaea;
+}
+
+.underButton {
+	background-color: #eaeaea;
+	border: 1px  #777 solid;
 	border-radius: 5px;
 }
