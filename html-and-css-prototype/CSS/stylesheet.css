@@ -45,6 +45,16 @@ p	{
 	font-size: .9em;
 }
 
+header {
+	grid-area: header;
+  background-color: #EF5F3C;
+}
+
+headerEmpty {
+	grid-area: headerEmpty;
+  background-color: #eaeaea;
+}
+
 .fontBig {
 	font-size: 1.15em;
 }
@@ -79,8 +89,27 @@ p	{
 }
 
 .pledgeWindow {
-	background-color: inherit;
+	background-color: transparent;
 	border: 1px  #eaeaea solid;
+	display: grid;
+	max-width: 250px;
+	position: relative;
+	margin: auto;
+	grid-gap: 10px / 10px;
+	grid-template-areas: "header headerEmpty"
+											 "main main"
+	  									 "pledgeBox pledgeButton"
+											 "footer footer";
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr 1fr;
+}
+
+.pledgeWindow main {
+	grid-area: main;
+}
+
+.pledgeWindow footer {
+	grid-area: footer;
 }
 
 .underButton {
@@ -90,12 +119,14 @@ p	{
 }
 
 .pledgeBox {
+	grid-area: pledgeBox;
 	background-color: inherit;
 	border: 1px  #eaeaea solid;
 	border-radius: 5px;
 }
 
 .pledgeButton {
+	grid-area: pledgeButton;
 	background-color: #1CBC2C;
 	border-radius: 5px;
 }
